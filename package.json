@@ -6,7 +6,8 @@
     "build": "rollup -c",
     "dev": "run-p start:dev autobuild",
     "start:dev": "sirv dist --single --dev",
-    "autobuild": "rollup -c -w"
+    "autobuild": "rollup -c -w",
+    "start": "node server.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^13.0.0",
@@ -26,5 +27,7 @@
     "svelte-preprocess-sass": "^0.2.0",
     "vscode-css-languageservice": "^4.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
